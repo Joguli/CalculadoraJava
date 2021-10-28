@@ -5,6 +5,12 @@
  */
 package Visao;
 
+import javax.accessibility.AccessibleContext;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JRootPane;
+import javax.swing.JTextField;
+
 /**
  *
  * @author jogul
@@ -29,26 +35,26 @@ public class JFrTela extends javax.swing.JFrame {
 
         jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btAC = new javax.swing.JButton();
+        btMaisMenos = new javax.swing.JButton();
+        btPercentual = new javax.swing.JButton();
+        btDivisao = new javax.swing.JButton();
+        bt7 = new javax.swing.JButton();
+        bt8 = new javax.swing.JButton();
+        bt9 = new javax.swing.JButton();
+        btMultiplicacao = new javax.swing.JButton();
+        bt4 = new javax.swing.JButton();
+        bt5 = new javax.swing.JButton();
+        bt6 = new javax.swing.JButton();
+        btSubtracao = new javax.swing.JButton();
+        bt1 = new javax.swing.JButton();
+        bt2 = new javax.swing.JButton();
+        bt3 = new javax.swing.JButton();
+        btSoma = new javax.swing.JButton();
+        bt0 = new javax.swing.JButton();
+        btPontoFinal = new javax.swing.JButton();
+        btFechar = new javax.swing.JButton();
+        btIgual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,65 +70,165 @@ public class JFrTela extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 4));
 
-        jButton1.setText("jButton1");
-        jPanel1.add(jButton1);
+        btAC.setText("AC");
+        btAC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btACActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btAC);
 
-        jButton6.setText("jButton6");
-        jPanel1.add(jButton6);
+        btMaisMenos.setText("+/-");
+        btMaisMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btMaisMenosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btMaisMenos);
 
-        jButton2.setText("jButton2");
-        jPanel1.add(jButton2);
+        btPercentual.setText("%");
+        btPercentual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPercentualActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btPercentual);
 
-        jButton7.setText("jButton7");
-        jPanel1.add(jButton7);
+        btDivisao.setText("/");
+        btDivisao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btDivisaoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btDivisao);
 
-        jButton3.setText("jButton3");
-        jPanel1.add(jButton3);
+        bt7.setText("7");
+        bt7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt7);
 
-        jButton16.setText("jButton16");
-        jPanel1.add(jButton16);
+        bt8.setText("8");
+        bt8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt8);
 
-        jButton11.setText("jButton11");
-        jPanel1.add(jButton11);
+        bt9.setText("9");
+        bt9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt9);
 
-        jButton9.setText("jButton9");
-        jPanel1.add(jButton9);
+        btMultiplicacao.setText("*");
+        btMultiplicacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btMultiplicacaoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btMultiplicacao);
 
-        jButton17.setText("jButton17");
-        jPanel1.add(jButton17);
+        bt4.setText("4");
+        bt4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt4);
 
-        jButton4.setText("jButton4");
-        jPanel1.add(jButton4);
+        bt5.setText("5");
+        bt5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt5);
 
-        jButton15.setText("jButton15");
-        jPanel1.add(jButton15);
+        bt6.setText("6");
+        bt6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt6);
 
-        jButton20.setText("jButton20");
-        jPanel1.add(jButton20);
+        btSubtracao.setText("-");
+        btSubtracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSubtracaoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btSubtracao);
 
-        jButton19.setText("jButton19");
-        jPanel1.add(jButton19);
+        bt1.setText("1");
+        bt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt1);
 
-        jButton18.setText("jButton18");
-        jPanel1.add(jButton18);
+        bt2.setText("2");
+        bt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt2);
 
-        jButton12.setText("jButton12");
-        jPanel1.add(jButton12);
+        bt3.setText("3");
+        bt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt3);
 
-        jButton10.setText("jButton10");
-        jPanel1.add(jButton10);
+        btSoma.setText("+");
+        btSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSomaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btSoma);
 
-        jButton13.setText("jButton13");
-        jPanel1.add(jButton13);
+        bt0.setText("0");
+        bt0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt0ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt0);
 
-        jButton14.setText("jButton14");
-        jPanel1.add(jButton14);
+        btPontoFinal.setText(".");
+        btPontoFinal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPontoFinalActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btPontoFinal);
 
-        jButton8.setText("jButton8");
-        jPanel1.add(jButton8);
+        btFechar.setText("Fechar");
+        btFechar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btFecharActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btFechar);
 
-        jButton5.setText("jButton5");
-        jPanel1.add(jButton5);
+        btIgual.setText("=");
+        btIgual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btIgualActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btIgual);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -152,62 +258,332 @@ public class JFrTela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void btPercentualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPercentualActionPerformed
+        jTextField1.setText(jTextField1.getText() + "%");
+    }//GEN-LAST:event_btPercentualActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new JFrTela().setVisible(true);
+    private void btSubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSubtracaoActionPerformed
+        jTextField1.setText(jTextField1.getText() + "-");
+    }//GEN-LAST:event_btSubtracaoActionPerformed
+
+    private void btSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSomaActionPerformed
+        jTextField1.setText(jTextField1.getText() + "+");
+    }//GEN-LAST:event_btSomaActionPerformed
+
+    private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "1");
+    }//GEN-LAST:event_bt1ActionPerformed
+
+    private void bt0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt0ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "0");
+    }//GEN-LAST:event_bt0ActionPerformed
+
+    private void btPontoFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPontoFinalActionPerformed
+        jTextField1.setText(jTextField1.getText() + ".");
+    }//GEN-LAST:event_btPontoFinalActionPerformed
+
+    private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "2");
+    }//GEN-LAST:event_bt2ActionPerformed
+
+    private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "3");
+    }//GEN-LAST:event_bt3ActionPerformed
+
+    private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "4");
+    }//GEN-LAST:event_bt4ActionPerformed
+
+    private void bt6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt6ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "6");
+    }//GEN-LAST:event_bt6ActionPerformed
+
+    private void bt7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt7ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "7");
+    }//GEN-LAST:event_bt7ActionPerformed
+
+    private void bt8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt8ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "8");
+    }//GEN-LAST:event_bt8ActionPerformed
+
+    private void bt9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt9ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "9");
+    }//GEN-LAST:event_bt9ActionPerformed
+
+    private void btACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btACActionPerformed
+        jTextField1.setText(jTextField1.getText() + "AC");
+    }//GEN-LAST:event_btACActionPerformed
+
+    private void btMaisMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisMenosActionPerformed
+        jTextField1.setText(jTextField1.getText() + "+/-");
+    }//GEN-LAST:event_btMaisMenosActionPerformed
+
+    private void btDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDivisaoActionPerformed
+        jTextField1.setText(jTextField1.getText() + "/");
+    }//GEN-LAST:event_btDivisaoActionPerformed
+
+    private void btMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMultiplicacaoActionPerformed
+        jTextField1.setText(jTextField1.getText() + "*");
+    }//GEN-LAST:event_btMultiplicacaoActionPerformed
+
+    private void btIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIgualActionPerformed
+        jTextField1.setText(jTextField1.getText() + "=");
+    }//GEN-LAST:event_btIgualActionPerformed
+
+    private void btFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFecharActionPerformed
+        jTextField1.setText(jTextField1.getText() + "Fechar");
+    }//GEN-LAST:event_btFecharActionPerformed
+
+    private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "5");
+    }//GEN-LAST:event_bt5ActionPerformed
+   // public String tfValor;
+    private void digita(String caractere){
+        
+        if(tfValor.getText().equals("0.00")){
+           tfValor.setText(caractere);
+        }else{
+            if(caractere.equals(",") && tfValor.getText().contains(",")){
+                
+            }else{
+                tfValor.setText(tfValor.getText().concat(caractere));
             }
-        });
+                    }
     }
 
+    public String getTfValor() {
+        return tfValor;
+    }
+
+    public void setTfValor(String tfValor) {
+        this.tfValor = tfValor;
+    }
+
+    public JButton getBt0() {
+        return bt0;
+    }
+
+    public void setBt0(JButton bt0) {
+        this.bt0 = bt0;
+    }
+
+    public JButton getBt1() {
+        return bt1;
+    }
+
+    public void setBt1(JButton bt1) {
+        this.bt1 = bt1;
+    }
+
+    public JButton getBt2() {
+        return bt2;
+    }
+
+    public void setBt2(JButton bt2) {
+        this.bt2 = bt2;
+    }
+
+    public JButton getBt3() {
+        return bt3;
+    }
+
+    public void setBt3(JButton bt3) {
+        this.bt3 = bt3;
+    }
+
+    public JButton getBt4() {
+        return bt4;
+    }
+
+    public void setBt4(JButton bt4) {
+        this.bt4 = bt4;
+    }
+
+    public JButton getBt5() {
+        return bt5;
+    }
+
+    public void setBt5(JButton bt5) {
+        this.bt5 = bt5;
+    }
+
+    public JButton getBt6() {
+        return bt6;
+    }
+
+    public void setBt6(JButton bt6) {
+        this.bt6 = bt6;
+    }
+
+    public JButton getBt7() {
+        return bt7;
+    }
+
+    public void setBt7(JButton bt7) {
+        this.bt7 = bt7;
+    }
+
+    public JButton getBt8() {
+        return bt8;
+    }
+
+    public void setBt8(JButton bt8) {
+        this.bt8 = bt8;
+    }
+
+    public JButton getBt9() {
+        return bt9;
+    }
+
+    public void setBt9(JButton bt9) {
+        this.bt9 = bt9;
+    }
+
+    public JButton getBtAC() {
+        return btAC;
+    }
+
+    public void setBtAC(JButton btAC) {
+        this.btAC = btAC;
+    }
+
+    public JButton getBtDivisao() {
+        return btDivisao;
+    }
+
+    public void setBtDivisao(JButton btDivisao) {
+        this.btDivisao = btDivisao;
+    }
+
+    public JButton getBtFechar() {
+        return btFechar;
+    }
+
+    public void setBtFechar(JButton btFechar) {
+        this.btFechar = btFechar;
+    }
+
+    public JButton getBtIgual() {
+        return btIgual;
+    }
+
+    public void setBtIgual(JButton btIgual) {
+        this.btIgual = btIgual;
+    }
+
+    public JButton getBtMaisMenos() {
+        return btMaisMenos;
+    }
+
+    public void setBtMaisMenos(JButton btMaisMenos) {
+        this.btMaisMenos = btMaisMenos;
+    }
+
+    public JButton getBtMultiplicacao() {
+        return btMultiplicacao;
+    }
+
+    public void setBtMultiplicacao(JButton btMultiplicacao) {
+        this.btMultiplicacao = btMultiplicacao;
+    }
+
+    public JButton getBtPercentual() {
+        return btPercentual;
+    }
+
+    public void setBtPercentual(JButton btPercentual) {
+        this.btPercentual = btPercentual;
+    }
+
+    public JButton getBtPontoFinal() {
+        return btPontoFinal;
+    }
+
+    public void setBtPontoFinal(JButton btPontoFinal) {
+        this.btPontoFinal = btPontoFinal;
+    }
+
+    public JButton getBtSoma() {
+        return btSoma;
+    }
+
+    public void setBtSoma(JButton btSoma) {
+        this.btSoma = btSoma;
+    }
+
+    public JButton getBtSubtracao() {
+        return btSubtracao;
+    }
+
+    public void setBtSubtracao(JButton btSubtracao) {
+        this.btSubtracao = btSubtracao;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JTextField getjTextField1() {
+        return jTextField1;
+    }
+
+    public void setjTextField1(JTextField jTextField1) {
+        this.jTextField1 = jTextField1;
+    }
+
+    public JRootPane getRootPane() {
+        return rootPane;
+    }
+
+    public void setRootPane(JRootPane rootPane) {
+        this.rootPane = rootPane;
+    }
+
+    public boolean isRootPaneCheckingEnabled() {
+        return rootPaneCheckingEnabled;
+    }
+
+    public void setRootPaneCheckingEnabled(boolean rootPaneCheckingEnabled) {
+        this.rootPaneCheckingEnabled = rootPaneCheckingEnabled;
+    }
+
+    public AccessibleContext getAccessibleContext() {
+        return accessibleContext;
+    }
+
+    public void setAccessibleContext(AccessibleContext accessibleContext) {
+        this.accessibleContext = accessibleContext;
+    }
+
+    
+    
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton bt0;
+    private javax.swing.JButton bt1;
+    private javax.swing.JButton bt2;
+    private javax.swing.JButton bt3;
+    private javax.swing.JButton bt4;
+    private javax.swing.JButton bt5;
+    private javax.swing.JButton bt6;
+    private javax.swing.JButton bt7;
+    private javax.swing.JButton bt8;
+    private javax.swing.JButton bt9;
+    private javax.swing.JButton btAC;
+    private javax.swing.JButton btDivisao;
+    private javax.swing.JButton btFechar;
+    private javax.swing.JButton btIgual;
+    private javax.swing.JButton btMaisMenos;
+    private javax.swing.JButton btMultiplicacao;
+    private javax.swing.JButton btPercentual;
+    private javax.swing.JButton btPontoFinal;
+    private javax.swing.JButton btSoma;
+    private javax.swing.JButton btSubtracao;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
