@@ -337,8 +337,7 @@ public class JFrTela extends javax.swing.JFrame {
     private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
         jTextField1.setText(jTextField1.getText() + "5");
     }//GEN-LAST:event_bt5ActionPerformed
-   /* public String tfValor;
-    
+   // public String tfValor;
     private void digita(String caractere){
         
         if(tfValor.getText().equals("0.00")){
@@ -347,7 +346,7 @@ public class JFrTela extends javax.swing.JFrame {
             if(caractere.equals(",") && tfValor.getText().contains(",")){
                 
             }else{
-                //tfValor.setText(tfValor.getText().concat(caractere));
+                tfValor.setText(tfValor.getText().concat(caractere));
             }
                     }
     }
@@ -359,7 +358,7 @@ public class JFrTela extends javax.swing.JFrame {
     public void setTfValor(String tfValor) {
         this.tfValor = tfValor;
     }
-*/
+
     public JButton getBt0() {
         return bt0;
     }
