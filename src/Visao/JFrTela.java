@@ -24,6 +24,8 @@ public class JFrTela extends javax.swing.JFrame {
         initComponents();
     }
 
+    double num1, num2, result;
+    String opr;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -259,15 +261,22 @@ public class JFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void btPercentualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPercentualActionPerformed
-        jTextField1.setText(jTextField1.getText() + "%");
+        num1 = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        opr = "%";
     }//GEN-LAST:event_btPercentualActionPerformed
 
     private void btSubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSubtracaoActionPerformed
-        jTextField1.setText(jTextField1.getText() + "-");
+        num1 = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        opr = "-";
     }//GEN-LAST:event_btSubtracaoActionPerformed
 
     private void btSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSomaActionPerformed
-        jTextField1.setText(jTextField1.getText() + "+");
+        //jTextField1.setText(jTextField1.getText() + "+");
+        num1 = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        opr = "+";
     }//GEN-LAST:event_btSomaActionPerformed
 
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
@@ -311,7 +320,15 @@ public class JFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_bt9ActionPerformed
 
     private void btACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btACActionPerformed
-        jTextField1.setText(jTextField1.getText() + "AC");
+    //    jTextField1.setText(jTextField1.getText() + "AC");
+        
+        String AC = null;
+        if(jTextField1.getText().length() > 0){
+            StringBuilder s = new StringBuilder(jTextField1.getText());
+            s.deleteCharAt(jTextField1.getText().length() - 1);
+            AC = s.toString();
+            jTextField1.setText(AC);
+        }
     }//GEN-LAST:event_btACActionPerformed
 
     private void btMaisMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisMenosActionPerformed
@@ -319,11 +336,15 @@ public class JFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_btMaisMenosActionPerformed
 
     private void btDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDivisaoActionPerformed
-        jTextField1.setText(jTextField1.getText() + "/");
+        num1 = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        opr = "/";
     }//GEN-LAST:event_btDivisaoActionPerformed
 
     private void btMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMultiplicacaoActionPerformed
-        jTextField1.setText(jTextField1.getText() + "*");
+        num1 = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        opr = "*";
     }//GEN-LAST:event_btMultiplicacaoActionPerformed
 
     private void btIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIgualActionPerformed
