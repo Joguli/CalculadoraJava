@@ -37,8 +37,8 @@ public class JFrTela extends javax.swing.JFrame {
 
         jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        btAC = new javax.swing.JButton();
-        btMaisMenos = new javax.swing.JButton();
+        btB = new javax.swing.JButton();
+        btCE = new javax.swing.JButton();
         btPercentual = new javax.swing.JButton();
         btDivisao = new javax.swing.JButton();
         bt7 = new javax.swing.JButton();
@@ -60,9 +60,8 @@ public class JFrTela extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.setText("0.00");
         jTextField1.setToolTipText("");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,21 +71,21 @@ public class JFrTela extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 4));
 
-        btAC.setText("AC");
-        btAC.addActionListener(new java.awt.event.ActionListener() {
+        btB.setText("B->");
+        btB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btACActionPerformed(evt);
+                btBActionPerformed(evt);
             }
         });
-        jPanel1.add(btAC);
+        jPanel1.add(btB);
 
-        btMaisMenos.setText("+/-");
-        btMaisMenos.addActionListener(new java.awt.event.ActionListener() {
+        btCE.setText("CE");
+        btCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btMaisMenosActionPerformed(evt);
+                btCEActionPerformed(evt);
             }
         });
-        jPanel1.add(btMaisMenos);
+        jPanel1.add(btCE);
 
         btPercentual.setText("%");
         btPercentual.addActionListener(new java.awt.event.ActionListener() {
@@ -319,7 +318,7 @@ public class JFrTela extends javax.swing.JFrame {
         jTextField1.setText(jTextField1.getText() + "9");
     }//GEN-LAST:event_bt9ActionPerformed
 
-    private void btACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btACActionPerformed
+    private void btBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBActionPerformed
     //    jTextField1.setText(jTextField1.getText() + "AC");
         
         String AC = null;
@@ -329,11 +328,12 @@ public class JFrTela extends javax.swing.JFrame {
             AC = s.toString();
             jTextField1.setText(AC);
         }
-    }//GEN-LAST:event_btACActionPerformed
+    }//GEN-LAST:event_btBActionPerformed
 
-    private void btMaisMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisMenosActionPerformed
-        jTextField1.setText(jTextField1.getText() + "+/-");
-    }//GEN-LAST:event_btMaisMenosActionPerformed
+    private void btCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCEActionPerformed
+        //jTextField1.setText(jTextField1.getText() + "+/-");
+        jTextField1.setText("");
+    }//GEN-LAST:event_btCEActionPerformed
 
     private void btDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDivisaoActionPerformed
         num1 = Double.parseDouble(jTextField1.getText());
@@ -348,11 +348,27 @@ public class JFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_btMultiplicacaoActionPerformed
 
     private void btIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIgualActionPerformed
-        jTextField1.setText(jTextField1.getText() + "=");
+        num2 = Double.parseDouble(jTextField1.getText());
+        if(opr == "+"){
+            result = num1 + num2;
+            jTextField1.setText(Double.toString(result));
+        }else if(opr == "-"){
+            result = num1 - num2;
+            jTextField1.setText(Double.toString(result));
+        }else if(opr == "*"){
+            result = num1 * num2;
+            jTextField1.setText(Double.toString(result));
+        }else if(opr == "/"){
+            result = num1 / num2;
+            jTextField1.setText(Double.toString(result));
+        }else{
+            result = (num1 * num2) / 100;
+            jTextField1.setText(Double.toString(result));
+        }
     }//GEN-LAST:event_btIgualActionPerformed
 
     private void btFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFecharActionPerformed
-        jTextField1.setText(jTextField1.getText() + "Fechar");
+        System.exit(0);
     }//GEN-LAST:event_btFecharActionPerformed
 
     private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
@@ -371,11 +387,11 @@ public class JFrTela extends javax.swing.JFrame {
     private javax.swing.JButton bt7;
     private javax.swing.JButton bt8;
     private javax.swing.JButton bt9;
-    private javax.swing.JButton btAC;
+    private javax.swing.JButton btB;
+    private javax.swing.JButton btCE;
     private javax.swing.JButton btDivisao;
     private javax.swing.JButton btFechar;
     private javax.swing.JButton btIgual;
-    private javax.swing.JButton btMaisMenos;
     private javax.swing.JButton btMultiplicacao;
     private javax.swing.JButton btPercentual;
     private javax.swing.JButton btPontoFinal;
