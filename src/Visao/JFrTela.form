@@ -79,7 +79,7 @@
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="f6" green="f0" red="d4" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
 
@@ -90,7 +90,7 @@
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="0" width="310" height="273"/>
+              <AbsoluteConstraints x="10" y="13" width="310" height="280"/>
             </Constraint>
           </Constraints>
 
@@ -101,6 +101,9 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="btCE">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="fd" green="fa" red="ec" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="CE"/>
               </Properties>
               <Events>
