@@ -84,7 +84,9 @@ public class JFrTela extends javax.swing.JFrame {
         jPanel1.setLayout(new java.awt.GridLayout(5, 4));
 
         btCE.setBackground(new java.awt.Color(236, 250, 253));
+        btCE.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btCE.setText("CE");
+        btCE.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btCEActionPerformed(evt);
@@ -92,7 +94,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btCE);
 
+        btB.setBackground(new java.awt.Color(236, 250, 253));
+        btB.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btB.setText("B->");
+        btB.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btBActionPerformed(evt);
@@ -100,7 +105,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btB);
 
+        btPercentual.setBackground(new java.awt.Color(236, 250, 253));
+        btPercentual.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btPercentual.setText("%");
+        btPercentual.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btPercentual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPercentualActionPerformed(evt);
@@ -108,7 +116,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btPercentual);
 
+        btDivisao.setBackground(new java.awt.Color(236, 250, 253));
+        btDivisao.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         btDivisao.setText("/");
+        btDivisao.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btDivisao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btDivisaoActionPerformed(evt);
@@ -116,7 +127,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btDivisao);
 
+        bt7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt7.setText("7");
+        bt7.setBorderPainted(false);
         bt7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt7ActionPerformed(evt);
@@ -124,7 +137,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt7);
 
+        bt8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt8.setText("8");
+        bt8.setBorderPainted(false);
         bt8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt8ActionPerformed(evt);
@@ -132,7 +147,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt8);
 
+        bt9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt9.setText("9");
+        bt9.setBorderPainted(false);
         bt9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt9ActionPerformed(evt);
@@ -140,7 +157,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt9);
 
+        btMultiplicacao.setBackground(new java.awt.Color(236, 250, 253));
+        btMultiplicacao.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btMultiplicacao.setText("*");
+        btMultiplicacao.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btMultiplicacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btMultiplicacaoActionPerformed(evt);
@@ -148,7 +168,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btMultiplicacao);
 
+        bt4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt4.setText("4");
+        bt4.setBorderPainted(false);
         bt4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt4ActionPerformed(evt);
@@ -156,7 +178,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt4);
 
+        bt5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt5.setText("5");
+        bt5.setBorderPainted(false);
         bt5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt5ActionPerformed(evt);
@@ -164,7 +188,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt5);
 
+        bt6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt6.setText("6");
+        bt6.setBorderPainted(false);
         bt6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt6ActionPerformed(evt);
@@ -172,7 +198,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt6);
 
+        btSubtracao.setBackground(new java.awt.Color(236, 250, 253));
+        btSubtracao.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btSubtracao.setText("-");
+        btSubtracao.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btSubtracao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btSubtracaoActionPerformed(evt);
@@ -180,7 +209,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btSubtracao);
 
+        bt1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt1.setText("1");
+        bt1.setBorderPainted(false);
         bt1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt1ActionPerformed(evt);
@@ -188,7 +219,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt1);
 
+        bt2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt2.setText("2");
+        bt2.setBorderPainted(false);
         bt2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt2ActionPerformed(evt);
@@ -196,7 +229,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt2);
 
+        bt3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt3.setText("3");
+        bt3.setBorderPainted(false);
         bt3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt3ActionPerformed(evt);
@@ -204,7 +239,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt3);
 
+        btSoma.setBackground(new java.awt.Color(236, 250, 253));
+        btSoma.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btSoma.setText("+");
+        btSoma.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btSomaActionPerformed(evt);
@@ -212,7 +250,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btSoma);
 
+        bt0.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bt0.setText("0");
+        bt0.setBorderPainted(false);
         bt0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt0ActionPerformed(evt);
@@ -220,7 +260,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(bt0);
 
+        btPontoFinal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btPontoFinal.setText(".");
+        btPontoFinal.setBorderPainted(false);
         btPontoFinal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPontoFinalActionPerformed(evt);
@@ -228,7 +270,9 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btPontoFinal);
 
+        btFechar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btFechar.setText("Fechar");
+        btFechar.setBorderPainted(false);
         btFechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btFecharActionPerformed(evt);
@@ -236,7 +280,10 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btFechar);
 
+        btIgual.setBackground(new java.awt.Color(236, 250, 253));
+        btIgual.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btIgual.setText("=");
+        btIgual.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
         btIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btIgualActionPerformed(evt);
@@ -257,9 +304,8 @@ public class JFrTela extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
