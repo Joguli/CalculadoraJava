@@ -39,7 +39,7 @@ public class JFrTela extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        btCE = new javax.swing.JButton();
+        btLimpar = new javax.swing.JButton();
         btB = new javax.swing.JButton();
         btPercentual = new javax.swing.JButton();
         btDivisao = new javax.swing.JButton();
@@ -67,7 +67,7 @@ public class JFrTela extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setBackground(new java.awt.Color(236, 250, 253));
-        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextField1.setToolTipText("");
         jTextField1.setBorder(null);
@@ -76,23 +76,24 @@ public class JFrTela extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 310, 38));
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 310, 80));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setPreferredSize(new java.awt.Dimension(340, 500));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 4));
 
-        btCE.setBackground(new java.awt.Color(236, 250, 253));
-        btCE.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btCE.setText("CE");
-        btCE.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
-        btCE.addActionListener(new java.awt.event.ActionListener() {
+        btLimpar.setBackground(new java.awt.Color(236, 250, 253));
+        btLimpar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btLimpar.setText("Limpar");
+        btLimpar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/btn1.png"))); // NOI18N
+        btLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCEActionPerformed(evt);
+                btLimparActionPerformed(evt);
             }
         });
-        jPanel1.add(btCE);
+        jPanel1.add(btLimpar);
 
         btB.setBackground(new java.awt.Color(236, 250, 253));
         btB.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -291,21 +292,21 @@ public class JFrTela extends javax.swing.JFrame {
         });
         jPanel1.add(btIgual);
 
-        jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 13, 310, 280));
+        jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -7, 340, 510));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -386,10 +387,10 @@ public class JFrTela extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btBActionPerformed
 
-    private void btCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCEActionPerformed
+    private void btLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimparActionPerformed
         //jTextField1.setText(jTextField1.getText() + "+/-");
         jTextField1.setText("");
-    }//GEN-LAST:event_btCEActionPerformed
+    }//GEN-LAST:event_btLimparActionPerformed
 
     private void btDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDivisaoActionPerformed
         num1 = Double.parseDouble(jTextField1.getText());
@@ -444,10 +445,10 @@ public class JFrTela extends javax.swing.JFrame {
     private javax.swing.JButton bt8;
     private javax.swing.JButton bt9;
     private javax.swing.JButton btB;
-    private javax.swing.JButton btCE;
     private javax.swing.JButton btDivisao;
     private javax.swing.JButton btFechar;
     private javax.swing.JButton btIgual;
+    private javax.swing.JButton btLimpar;
     private javax.swing.JButton btMultiplicacao;
     private javax.swing.JButton btPercentual;
     private javax.swing.JButton btPontoFinal;
